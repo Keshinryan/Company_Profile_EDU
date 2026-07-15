@@ -78,3 +78,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealEls.forEach((el) => observer.observe(el));
 });
+
+// ABOUT US PAGE — scroll reveal
+// Same pattern as product.js: fades / slides .reveal elements into
+// place the first time they enter the viewport.
+
+document.addEventListener('DOMContentLoaded', () => {
+  const revealEls = document.querySelectorAll('.reveal');
+
+  if (!('IntersectionObserver' in window) || revealEls.length === 0) {
+    revealEls.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  revealEls.forEach((el) => observer.observe(el));
+});
