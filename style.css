@@ -1520,3 +1520,465 @@ p {
   }
 
 }
+
+
+/* =========================================
+   OPERATIONS PAGE — page specific styles
+========================================= */
+
+/* ---------- FACILITIES ---------- */
+
+.facilities-section {
+  background: #ffffff;
+}
+
+.facilities-intro {
+  max-width: 900px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.facility-photo {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.facility-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.facility-photo-caption-left {
+  position: absolute;
+  bottom: 20px;
+  color: #2f66c9;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+  text-align: left;
+  left: 24px;
+}
+
+.facility-photo-caption-right{
+  position: absolute;
+  bottom: 20px;
+  color: #2f66c9;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+  text-align: right;
+  right: 24px;
+}
+
+/* ---------- STORAGE CAPACITY CARDS ---------- */
+
+.storage-card {
+  background: #3f6fcb;
+  border-radius: 6px;
+  padding: 26px;
+  height: 100%;
+}
+
+.storage-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.storage-number {
+  font-size: 44px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+}
+
+.storage-label {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+  line-height: 1.4;
+}
+
+.storage-photo {
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.storage-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- COVERAGE AREA ---------- */
+
+.coverage-section {
+  background: #3f6fcb;
+}
+
+.coverage-map {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.coverage-map img {
+  width: 100%;
+  display: block;
+}
+
+/* ---------- DEPO ---------- */
+
+.depo-section {
+  background: #ffffff;
+}
+
+.depo-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.depo-heading h3 {
+  color: #2f66c9;
+  font-weight: 700;
+  margin: 0;
+}
+
+.depo-heading span {
+  color: #2f66c9;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.depo-photo {
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.depo-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- SCROLL REVEAL ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE (phones only)
+========================================================== */
+@media (max-width: 768px) {
+
+  .facilities-section .section-title {
+    font-size: 32px;
+  }
+
+  .facilities-intro {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .facility-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .facility-photo-caption-right {
+    font-size: 16px;
+    right: 16px;
+    bottom: 14px;
+  }
+  .facility-photo-caption-left {
+    align-items: right;
+    font-size: 16px;
+    right: 16px;
+    bottom: 14px;
+  }
+
+  .storage-card {
+    padding: 18px;
+  }
+
+  .storage-number {
+    font-size: 32px;
+  }
+
+  .storage-label {
+    font-size: 12px;
+  }
+
+  .coverage-section .section-title {
+    font-size: 32px;
+  }
+
+  .depo-heading {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .depo-heading h3 {
+    font-size: 22px;
+  }
+  .depo-heading span {
+    font-size: 15px;
+  }
+
+} 
+
+/* =========================================
+   CONTACT US PAGE — page specific styles
+========================================= */
+
+.contact-section {
+  background: #ffffff;
+}
+
+.contact-subtitle {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  max-width: 800px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.contact-photo {
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 10px;
+}
+
+.contact-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- INFO CARDS ---------- */
+
+.info-card {
+  background: #3f6fcb;
+  border-radius: 8px;
+  padding: 26px 30px;
+  color: #ffffff;
+  height: 100%;
+}
+
+.info-card h5 {
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.info-card hr {
+  border-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  margin-bottom: 22px;
+}
+
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1 1 200px;
+}
+
+.info-item i {
+  font-size: 22px;
+  margin-top: 2px;
+}
+
+.info-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.info-value {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hours-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hours-day {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.hours-time {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ---------- CTA WHATSAPP ---------- */
+
+.contact-cta {
+  background: #3f6fcb;
+  border-radius: 8px;
+  padding: 50px 40px;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.contact-cta h3 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-cta p {
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.cta-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #eef2fb;
+  color: #314D7D;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-whatsapp-btn i {
+  font-size: 18px;
+}
+
+.cta-whatsapp-btn:hover {
+  background: #ffffff;
+  color: #314D7D;
+  transform: translateY(-2px);
+}
+
+/* ---------- SCROLL REVEAL ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE (phones only)
+========================================================== */
+@media (max-width: 768px) {
+  .info-item{
+    flex:0 0 0px
+  }
+
+  .contact-section .section-title {
+    font-size: 32px;
+  }
+
+  .contact-subtitle {
+    font-size: 17px;
+  }
+
+  .contact-intro {
+    font-size: 13px;
+  }
+
+  .contact-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .info-card {
+    padding: 20px 22px;
+  }
+
+  .info-list {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .contact-cta {
+    padding: 30px 24px;
+    text-align: left;
+  }
+
+  .contact-cta h3 {
+    font-size: 22px;
+  }
+
+  .cta-whatsapp-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
