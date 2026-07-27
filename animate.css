@@ -366,6 +366,23 @@
 .col-lg-3.fade-in-right:nth-child(5).is-visible {
   animation-delay: calc(var(--stagger-step) * 4);
 }
+
+/* ---- col-lg-2 (fade-in-bottom) ---- */
+.col-lg-2.fade-in-bottom:nth-child(1).is-visible {
+  animation-delay: calc(var(--stagger-step) * 0);
+}
+.col-lg-2.fade-in-bottom:nth-child(2).is-visible {
+  animation-delay: calc(var(--stagger-step) * 1);
+}
+.col-lg-2.fade-in-bottom:nth-child(3).is-visible {
+  animation-delay: calc(var(--stagger-step) * 2);
+}
+.col-lg-2.fade-in-bottom:nth-child(4).is-visible {
+  animation-delay: calc(var(--stagger-step) * 3);
+}
+.col-lg-3.fade-in-bottom:nth-child(5).is-visible {
+  animation-delay: calc(var(--stagger-step) * 4);
+}
  
 /* ---- brand-box (fade-in-bottom) ---- */
 .brand-box.fade-in-bottom:nth-child(1).is-visible {
