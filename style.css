@@ -1821,14 +1821,17 @@ p {
 .info-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  align-items: flex-start;
 }
 
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  flex: 1 1 200px;
+  gap: 10px;
+  flex: 1 1 90px;
+}
+.info-item:last-child { 
+  flex: 1.6 1 250px; 
 }
 
 .info-item i {
