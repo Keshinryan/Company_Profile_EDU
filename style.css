@@ -1682,7 +1682,6 @@ p {
 .depo-photo {
   border-radius: 4px;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
 }
 
 .depo-photo img {
