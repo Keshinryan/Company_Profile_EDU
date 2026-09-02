@@ -1049,7 +1049,7 @@ p {
   align-items: stretch;
   justify-content: center;
   width: 100%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 40px auto;
 }
 
 .exec-connector {
@@ -1057,7 +1057,7 @@ p {
   position: relative;
 }
 
-.exec-connector::before {
+/* .exec-connector::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1066,9 +1066,9 @@ p {
   height: 2px;
   background: #c9d3e6;
   transform: translateY(-50%);
-}
+} */
 
-.exec-connector::after {
+/* .exec-connector::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1077,7 +1077,7 @@ p {
   height: 40px;
   background: #c9d3e6;
   transform: translateX(-50%);
-}
+} */
  
 .org-box {
   display: inline-block;
@@ -1117,9 +1117,20 @@ p {
    Solid navy box, matching the rest of the tree's root-style boxes. */
 
 .org-box-exec {
+  position: relative;
   background: #314D7D;
   color: #ffffff;
   font-size: 15px;
+}
+.org-box-exec::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: #c9d3e6;
+  transform: translateX(-50%);
 }
 
 .org-box-exec small {
